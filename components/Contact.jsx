@@ -13,7 +13,7 @@ const [contact,setContact]=useState({
   email:"",name:"",subject:"",message:""
 })
 
-const len=window.length
+
 
 const [spinner,setSpinner]=useState(false)
 const handleChange=(e)=>{
@@ -45,7 +45,7 @@ setContact((prv)=>{
                 </div>
             
             <input placeholder='Subject' type='text' value={contact.subject} onChange={(e)=>{handleChange(e)}} required name='subject' className='p-2 w-full bg-transparent outline-none focus:border-b-[2px]  focus:border-b-accent shadow-lg border-b-2  text-white duration-300 transition-all border-b-[#332267]'/>
-            <textarea placeholder='Message' type='text' value={contact.message} onChange={(e)=>{handleChange(e)}} required name='message' className='p-2 w-full bg-transparent outline-none focus:border-b-[2px]  focus:border-b-accent shadow-lg border-b-2  text-white duration-300 transition-all border-b-[#332267]' rows={len>=1200?7:len>650?5:4}  />
+            <textarea placeholder='Message' type='text' value={contact.message} onChange={(e)=>{handleChange(e)}} required name='message' className='p-2 w-full bg-transparent outline-none focus:border-b-[2px]  focus:border-b-accent shadow-lg border-b-2  text-white duration-300 transition-all border-b-[#332267]' rows={4}  />
             <button onClick={sendMail}
             disabled={spinner}
             className={`${spinner && "cursor-not-allowed"} -mt-1 sm:-mt-0 relative btn flex justify-center items-center group border-2 border-[#332267] duration-300 transition-all hover:border-accent overflow-hidden w-max rounded-full sm:py-3 px-4 py-2 sm:px-8`}>
