@@ -54,23 +54,23 @@ const worksData=[1,2,3,4]
                 <div className="w-full h-full rounded-lg  md:py-2 items-center gap-2 flex flex-col md:flex-row group  md:gap-x-10 relative  md:px-14  " >
                   <div className="flex justify-center items-center gap-2  ">
                   <Image width={200} height={200} src={item.imgUrl?urlFor(item.imgUrl).url():imgUrl} alt='image'
-                  className="mx-auto object-cover w-[150px] h-[200px] md:h-[300px] rounded-md opacity-90 md:w-[250px]"
+                  className="mx-auto object-cover w-[100px] h-[150px] sm:w-[150px] sm:h-[200px] md:h-[300px] rounded-md opacity-90 md:w-[250px]"
                   />
                   </div>
                   <div className="flex-1 h-max md:h-[300px] mx-[0.2px] md:mx-2 bg-primary/10 rounded-md p-2 md:gap-y-3 gap-y-1 flex-col flex ">
-                      <h3 className="md:text-xl text-base">Title : <span className="text-accent capitalize">{item.title}</span></h3>
-                      <h3 className="text-base md:text-xl">Description : <span className="text-accent">{item.description}</span></h3>
-                      <h3 className="text-base md:text-xl">Technologies : </h3>
-                      <div className="flex gap-x-2 gap-y-4 flex-wrap">
+                      <h3 className="md:text-xl text-sm sm:text-base">Title : <span className="text-accent capitalize">{item.title}</span></h3>
+                      <h3 className="hidden md:block text-sm sm:text-base md:text-xl">Description : <span className="text-accent ">{item.description}</span></h3>
+                      <h3 className="text-sm sm:text-base md:text-xl">Technologies : </h3>
+                      <div className="flex gap-x-2 gap-y-2 sm:gap-y-4 flex-wrap">
                       {item.technologies!==null && item.technologies.map((tech,index)=>{
-                            return <Image key={index} src={urlFor(tech.icon).url()} width={30} height={30} className="h-[20px] w-[20px] md:h-[30px] md:w-[30px] rounded-full" />
+                            return <Image key={index} src={urlFor(tech.icon).url()} width={30} height={30} className="h-[15px] w-[15px] sm:h-[20px] sm:w-[20px] md:h-[30px] md:w-[30px] rounded-full" />
                         })}
                       
                       </div>
-                      <h3 className="md:text-xl text-base">Code Link : <Link target='_blank' href={item.codeLink} className="text-accent hover:underline">Click here<RiGithubLine className='inline'/></Link></h3>
-                      <h3 className=" text-base md:text-xl">Deployed Url : <Link target='_blank' href={item.projectLink} className="text-accent hover:underline">Click here <RxRocket className='inline'/></Link></h3>
+                      <h3 className="md:text-xl text-sm sm:text-base">Code Link : <Link target='_blank' href={item.codeLink} className="text-accent hover:underline">Click here<RiGithubLine className='inline'/></Link></h3>
+                      <h3 className=" text-sm sm:text-base md:text-xl">Deployed Url : <Link target='_blank' href={item.projectLink} className="text-accent hover:underline">Click here <RxRocket className='inline'/></Link></h3>
                   </div>
-                  <RxArrowTopRight className="absolute bottom-2 right-[2%] text-3xl group-hover:rotate-45 group-hover:text-accent duration-300 transition-all" />
+                  <RxArrowTopRight className="absolute bottom-2 right-[2%] sm:text-base text-sm md:text-3xl group-hover:rotate-45 group-hover:text-accent duration-300 transition-all" />
                 </div>
             </SwiperSlide>
         )

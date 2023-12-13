@@ -8,7 +8,7 @@ const Profile = ({imgurl}) => {
         src={imgurl}
         width={200}
         height={200}
-        className='relative mx-auto rounded-full h-[250px] w-[250px] object-center object-cover '
+        className='relative mx-auto rounded-full h-[150px] w-[150px] sm:h-[250px] sm:w-[250px] object-center object-cover '
         alt='profile'
         />
         

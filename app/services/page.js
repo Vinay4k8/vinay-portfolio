@@ -12,8 +12,8 @@ const page = () => {
         <Circles/>
         <Transition/>
         <div className="container mx-auto">
-            <div className='flex flex-col xl:flex-row gap-x-8'>
-                <div className='text-center flex xl:w-[30vw] felx-col lg:text-left mb-4 xl:mb-0'>
+            <div className='flex flex-col xl:flex-row gap-x-4 md:gap-x-8'>
+                <div className='text-center flex xl:w-[30vw] felx-col lg:text-left mb-2 md:mb-4 xl:mb-0'>
                     <motion.div 
                     initial={{
                         opacity:0.4,y:-100
@@ -25,8 +25,8 @@ const page = () => {
                         delay:0.1,duration:1
                     }}
                     >
-                    <h1 className='text-3xl xl:mt-8'>I Know that Good Apps means Good Business </h1>
-                        <p className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
+                    <h1 className='text-xl md:text-3xl xl:mt-8'>I Know that Good Apps means Good Business </h1>
+                        <p className='mb-4 text-sm md:text-base max-w-[400px] mx-auto lg:mx-0'>
                         As a student, I bring a diverse skill set to the table, covering web design, frontend, and backend development. Proficient in Next.js for server-side rendering, I merge design flair with technical know-how to create engaging and functional websites. Committed to delivering standout projects that reflect both creativity and expertise.
                          </p>
                     </motion.div>

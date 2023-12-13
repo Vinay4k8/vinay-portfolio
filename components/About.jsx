@@ -43,22 +43,22 @@ const About = () => {
                 <Image
                 width={200}
                 height={200}
-                className='rounded-full object-center object-cover xl:w-[400px] xl:h-[400px] xl:rounded-md w-[140px] h-[140px]'
+                className='rounded-full object-center object-cover xl:w-[400px] xl:h-[400px] xl:rounded-md sm:w-[140px] sm:h-[140px] w-[100px] h-[100px]'
                 src={urlFor(abouts.imgUrl).url()}
                 />
-                <div className='gap-2 tracking-wide text-base mt-3 xl:text-lg'>
+                <div className='gap-2 md:tracking-wide text-sm sm:text-base mt-3 xl:text-lg'>
                 {abouts.description}
                 </div>
                 </motion.div>}
                 {index==1 && <div  className=''>
-                <h1 className='text-center text-3xl uppercase tracking-[10px] mt-7'>
+                <h1 className='text-center text-lg md:text-3xl uppercase tracking-[10px] mt-3 sm:mt-7'>
                     Skills
                 </h1>
-                <p className=' text-center capitalize text-sm xl:text-lg mt-5 mb-8 tracking-widest '>
+                <p className=' text-center capitalize text-xs sm:text-sm xl:text-lg sm:mt-5 mt-2  mb-4 sm:mb-8 tracking-widest '>
                     hover over a skill for current proficiency
                 </p>
                 
-                    <motion.div className='grid grid-cols-4 md:grid-cols-5 mx-auto md:ml-10  text-center gap-x-4 xl:gap-x-10 gap-y-10'>
+                    <motion.div className='grid grid-cols-4 md:grid-cols-5 mx-auto md:ml-10  text-center gap-x-4 xl:gap-x-10 sm:gap-y-10 gap-y-3'>
                     {skills.map((skill,index)=>{
                             return <SkillCard key={index} title={skill.title} icon={urlFor(skill.icon).url()} progress={skill.progress} /> 
                         })}

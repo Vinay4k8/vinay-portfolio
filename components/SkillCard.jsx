@@ -30,7 +30,7 @@ const SkillCard = ({icon,progress,title}) => {
 {progress}%
         </div>
         </div>
-        <p className='xl:text-base text-xs uppercase mt-1 text-center inline'>{title}</p>
+        <p className='xl:text-base text-xs uppercase hidden sm:inline mt-1 text-center '>{title}</p>
     </motion.div>
   )
 }

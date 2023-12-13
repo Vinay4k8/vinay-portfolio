@@ -12,7 +12,7 @@ export const metadata={
 const page = () => {
   return (
     
-    <div className='relative h-screen '>
+    <div className='relative min-h-screen '>
        <Transition />
        <Circles/>
         

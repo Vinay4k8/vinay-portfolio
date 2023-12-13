@@ -30,16 +30,16 @@ const HomePage = () => {
       <h2 className="text-sm tracking-[15px] uppercase pb-2 mt-2 ">
         {pageInfo.role}
       </h2>
-      <div className="md:text-4xl text-2xl">
+      <div className="md:text-4xl text-lg sm:text-2xl">
       <span>
          {text}
       </span>
        <Cursor cursorColor="#F13024" />
       </div>
       <div className="flex gap-4 justify-center items-center">
-        <Link   href={"/vinay-portfolio1.pdf"} target='_blank'
+        <Link   href={"/vinay-resume.pdf"} target='_blank'
           download={true} className='cursor-pointer relative z-10'>
-          <button className="bg-white text-black px-4 py-2 rounded-full text-lg group font-semibold hover:scale-105 duration-300 transition-all "
+          <button className="bg-white text-black px-4 py-2 rounded-full text-base sm:text-lg group font-semibold hover:scale-105 duration-300 transition-all "
           
           >
             Download cv
