@@ -5,7 +5,7 @@ import {  HiArrowRight } from 'react-icons/hi2'
 
 const ProjectStar = () => {
   return (
-    <Link href={"/works"} className='flex justify-center items-center group'>
+    <Link href={"/works"} className='flex relative z-20 justify-center items-center group'>
         <Image
         src={"/circle-star.svg"}
         width={120}

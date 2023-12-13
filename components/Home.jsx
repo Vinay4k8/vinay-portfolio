@@ -38,7 +38,7 @@ const HomePage = () => {
       </div>
       <div className="flex gap-4 justify-center items-center">
         <Link   href={"/vinay-resume.pdf"} target='_blank'
-          download={true} className='cursor-pointer relative z-10'>
+          download={true} className='cursor-pointer relative z-20'>
           <button className="bg-white text-black px-4 py-2 rounded-full text-base sm:text-lg group font-semibold hover:scale-105 duration-300 transition-all "
           
           >
