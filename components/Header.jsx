@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 const Header = () => {
   return (
     <div className='max-w-6xl w-full sticky z-40 mx-auto top-[2%]'>
-      <div className='flex justify-center md:justify-between items-center flex-col md:flex-row gap-y-4'>
+      <div className='flex p-1 sm:p-0 justify-between items-center  md:flex-row gap-y-4'>
 
       <motion.div
       initial={{x:-500,
@@ -20,8 +20,8 @@ const Header = () => {
           duration:2,
         }}
       >
-        <span className='font-bold text-3xl'>Vinay</span>
-        <span className='text-accent font-semibold text-3xl'>.Kandagatla</span>
+        <span className='font-bold text-xl sm:text-2xl md:text-3xl'>Vinay</span>
+        <span className='text-accent font-semibold text-xl sm:text-2xl md:text-3xl'>.Kandagatla</span>
       </motion.div>
       <motion.div
       initial={{x:500,

@@ -20,15 +20,15 @@ const BackGroundCircles = () => {
     }}
     className='flex items-center justify-center relative '>
         
-        <div className='h-[200px] absolute w-[200px] rounded-full border border-[#332263f4]/80 animate-ping duration-300 transition-all ease-in-out ' 
+        <div className=' h-[100px] md:h-[200px] absolute  w-[100px] md:w-[200px] rounded-full border border-[#332263f4]/80 animate-ping duration-300 transition-all ease-in-out ' 
         />
-         <div className='h-[300px] absolute w-[300px] rounded-full border border-[#332263f4]/50 ' 
+         <div className=' h-[150px] md:h-[300px] absolute  w-[150px] md:w-[300px] rounded-full border border-[#332263f4]/50 ' 
         />
-         <div className='h-[500px] absolute w-[500px] rounded-full border border-[#332263f4]/50 ' 
+         <div className=' h-[250px] md:h-[500px] absolute  w-[250px] md:w-[500px] rounded-full border border-[#332263f4]/50 ' 
         />
-        <div className='h-[650px] absolute w-[650px] rounded-full border border-accent animate-pulse duration-300 transition-all ease-in-out' 
+        <div className=' h-[325px] md:h-[650px] absolute  w-[325px] md:w-[650px] rounded-full border border-accent animate-pulse duration-300 transition-all ease-in-out' 
         />
-         <div className='h-[800px] absolute w-[800px] rounded-full border border-[#332263f4]/40' 
+         <div className=' h-[400px] md:h-[800px] absolute  w-[400px] md:w-[800px] rounded-full border border-[#332263f4]/40' 
 
         />
     </motion.div>

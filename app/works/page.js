@@ -10,7 +10,7 @@ export const metadata={
 
 const page = () => {
   return (
-    <div className='min-h-screen overflow-y-scroll '>
+    <div className='min-h-screen '>
        <Transition/>
        <Works/>
     </div>

@@ -11,7 +11,7 @@ export const metadata={
 
 const page = () => {
   return (
-    <div className='min-h-screen relative'>
+    <div className='min-h-[700px] sm:min-h-screen relative overflow-y-scroll'>
        <Transition/>
        <Circles/>
        <Bulb/>

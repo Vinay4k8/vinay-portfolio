@@ -61,11 +61,11 @@ import {
     serviceData.map((item,index)=>{
         return(
             <SwiperSlide key={index}>
-                <div className="bg-white/10 h-max rounded-lg py-2 px-4 sm:px-6 sm:py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer " >
+                <div className="bg-white/10 h-max rounded-lg py-2 px-2 sm:px-6 sm:py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer " >
                     <div className="text-accent text-lg sm:text-xl md:text-3xl" >{item.icon}</div>
                     <div>
-                        <div>{item.title}</div>
-                        <div>{item.description}</div>
+                        <div className="text-sm">{item.title}</div>
+                        <div className="text-sm">{item.description}</div>
                     </div>
                     <div className="text-lg sm:text-xl md:text-3xl" >
                         <RxArrowTopRight className="group-hover:rotate-45 duration-300 transition-all group-hover:text-accent"/>

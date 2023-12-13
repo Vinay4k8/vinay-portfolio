@@ -19,10 +19,10 @@ const About = () => {
   return (abouts && skills &&
     <div className='container mx-auto xl:mt-[6%] flex flex-col justify-center xl:flex-row gap-x-6'>
         <div className='flex flex-col justify-center '>
-        <div className='mt-10 flex gap-x-4  xl:gap-x-8 mx-auto xl:mx-0 mb-4 justify-center '>
+        <div className='mt-5 sm:mt-10 flex gap-x-4  xl:gap-x-8 mx-auto xl:mx-0 mb-4 justify-center '>
         {headings.map((item,itemIndex)=>{
             return (<button  onClick={()=>{setIndex(itemIndex)}}
-            className={`${index===itemIndex && "after:w-[100%]  after:bg-accent after:duration-300   after:transition-all text-accent "} capitalize tracking-widest cursor-pointer xl:text-lg relative after:w-4 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+            className={`${index===itemIndex && "after:w-[100%]  after:bg-accent after:duration-300   after:transition-all text-accent "} capitalize tracking-widest cursor-pointer text-base xl:text-lg relative after:w-4 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
             key={itemIndex}>
                 {item}
             </button>)
@@ -39,14 +39,14 @@ const About = () => {
             transition={{
                 duration:1.5,delay:0.3
             }}
-            className='flex xl:flex-row flex-col gap-x-8 gap-y-4 justify-center items-center z-20'>
+            className='flex xl:flex-row flex-col gap-x-8 gap-y-2 sm:gap-y-4 justify-center items-center z-20'>
                 <Image
                 width={200}
                 height={200}
                 className='rounded-full object-center object-cover xl:w-[400px] xl:h-[400px] xl:rounded-md sm:w-[140px] sm:h-[140px] w-[100px] h-[100px]'
                 src={urlFor(abouts.imgUrl).url()}
                 />
-                <div className='gap-2 md:tracking-wide text-sm sm:text-base mt-3 xl:text-lg'>
+                <div className=' md:tracking-wide text-xs sm:text-base mt-3 xl:text-lg'>
                 {abouts.description}
                 </div>
                 </motion.div>}

@@ -19,7 +19,7 @@ const Works = () => {
   return (works &&
     <div className='min-h-screen flex-col justify-center md:items-center md:flex w-full mx-auto '>
         <Circles/>
-        <h1 className='uppercase tracking-[10px] text-xl md:text-3xl text-center mt-20'>My Projects</h1>
+        <h1 className='uppercase tracking-[10px] text-lg sm:text-xl md:text-3xl text-center mt-8 sm:mt-20'>My Projects</h1>
         <div className="container mx-auto mt-5">
                 <motion.div 
                 initial={{

@@ -25,8 +25,8 @@ const page = () => {
                         delay:0.1,duration:1
                     }}
                     >
-                    <h1 className='text-xl md:text-3xl xl:mt-8'>I Know that Good Apps means Good Business </h1>
-                        <p className='mb-4 text-sm md:text-base max-w-[400px] mx-auto lg:mx-0'>
+                    <h1 className='sm:text-xl text-lg md:text-3xl xl:mt-8'>I Know that Good Apps means Good Business </h1>
+                        <p className='mb-4 text-xs sm:text-sm md:text-base max-w-[400px] mx-auto lg:mx-0'>
                         As a student, I bring a diverse skill set to the table, covering web design, frontend, and backend development. Proficient in Next.js for server-side rendering, I merge design flair with technical know-how to create engaging and functional websites. Committed to delivering standout projects that reflect both creativity and expertise.
                          </p>
                     </motion.div>
